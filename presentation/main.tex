@@ -1,12 +1,16 @@
+\PassOptionsToPackage{colorlinks=true,citecolor=pink,linkcolor=red,urlcolor=cyan}{hyperref}
 \documentclass
    [kul] % options: kulak (default) or kul, handout 
    {style/kulakbeamer}
 
 \usepackage{definitions}
 
+\usepackage{tikz-cd, tikz, pgfplots}
+\usepackage[style=apa]{biblatex}
+\newcommand{\inner}[2]{\langle #1, #2 \rangle}
+\addbibresource{IASReference.bib}
 
-
-\title{Classifying Integral Affine Structures on Compact Surfaces}
+\title{Classifying Regular Lagrangian Fibrations over Compact Surfaces}
 %\subtitle{Subtitle}
 \author[Short name]{Michael McGloin \and (Luka Zwaan)} 
 \institute{KU Leuven}
@@ -16,14 +20,17 @@
 \begin{document}
 
 \begin{titleframe}
-	\titlepage
+   \titlepage
 \end{titleframe}
 
 \begin{frame}{Overview}
-	\tableofcontents
+   \tableofcontents
 \end{frame}
 
 % % % Here you go  % % % 
 \include{IntegralAffineStructures}
+\begin{frame}[allowframebreaks]{References}
+   \printbibliography
+\end{frame}
 
 \end{document}
